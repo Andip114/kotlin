@@ -1,0 +1,109 @@
+fun main() {
+//   //immutable
+	val bahasa = "java"
+	bahasa = "kotlin"
+	println(bahasa)
+	}
+
+	fun main() {
+//   //mutable
+	var bahasa = "java"
+	bahasa = "kotlin"
+	println(bahasa)
+	}
+	
+	//function
+	fun main (){
+    fungsi1()
+    println(ReturnFungsi())
+    val hasil=hitung(5.0,10.0)
+    println(hasil)
+    
+	}
+
+	fun fungsi1(){
+    println("belajar dulu guys")
+	}
+
+	fun ReturnFungsi():Double{
+    return 10.5
+	}
+
+	fun hitung(angka1:Double,angka2:Double):Double{
+    var hasil=angka1+angka2
+    return hasil
+	}
+	
+	// MobDev
+
+	fun main(){
+    val mD=MobDev()
+    mD.studyMobDev()
+    mD.studyMobDev2()
+	}
+    
+	class MobDev(){
+    fun studyMobDev(){
+	println("MataKuliah Playstore")
+	}
+    
+    fun studyMobDev2(){
+	println("MataKuliah Playstore2")
+	}    
+	}
+	
+	//name
+	fun main(){
+    val orang =ganteng("andi")
+    orang.tampilkan()
+	}
+
+	class ganteng(val name:String){
+    fun tampilkan(){
+        println("$name ganteng baewis")
+    }
+	}
+	
+	//looping
+	fun main(){
+    for(i in 0..30)
+    println(i)
+	}
+	
+	//Array
+	fun main(){
+    val kota=arrayOf("Brebes","Tegal","Slawi","Pemalang")
+    for(i in kota.indices){
+        println(kota[i])
+    }
+	}
+	
+	//condition
+	fun main(){
+    val cuaca="Hujan"; when(cuaca){
+        "Hujan" -> println("Gunakan Payung")
+        "Panas" -> println("Minum Air Putih")
+        else -> println("Terobos aja")
+    }
+	}
+	
+	//Condition
+	fun main(args: Array<String>){
+    val username:String ="Andi"
+    
+    if (username == "Andi"){
+        println("Sugeng Rawuh")
+    }else{
+        println ("Matur Suwun")
+    }
+    
+	}
+	
+	//OOP//Singleton
+	object Orang{
+    val nama="andi"
+	}
+
+	fun main(args: Array<String>){
+    println(Orang.nama)
+	}
